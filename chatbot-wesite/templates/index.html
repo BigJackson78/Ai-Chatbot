@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>My ChatBuddy</title>
+</head>
+<body>
+    <h1>Talk to my ChatBuddy</h1>
+    <form method='POST'>
+        <input type='text' name='message' placeholder='Type your message here...' required>
+        <button type='submit'>Send</button>
+    </form>
+
+    {% if response %}
+    <p><strong>Bot:</strong> {{ response }}</p>
+    {% endif %} 
+</body>
+</html>
